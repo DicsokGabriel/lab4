@@ -18,6 +18,9 @@ public class ImageProxy implements Element{
     }
 
     public void print() {
-        System.out.println("Image with name: "+url);
+        Image img=loadImage();
+
+        img.print();
+        
     }
 }
