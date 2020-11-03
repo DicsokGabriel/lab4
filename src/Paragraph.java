@@ -16,7 +16,7 @@ public class Paragraph implements Element {
         if(alignStrategy==null) {
             System.out.println(this.name);
         }else{
-            alignStrategy.render(new Paragraph(this.name));
+            alignStrategy.render(this.name);
         }
     }
     public String getPar(){

@@ -1,3 +1,3 @@
 public interface AlignStrategy {
-    void render(Paragraph p );
+    void render(String p );
 }

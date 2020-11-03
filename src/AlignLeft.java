@@ -1,6 +1,6 @@
 public class AlignLeft implements AlignStrategy{
 
-    public void render(Paragraph paragraph){
-        System.out.println("+++++"+paragraph.getPar());
+    public void render(String paragraph){
+        System.out.println("+++++"+paragraph);
     }
 }
