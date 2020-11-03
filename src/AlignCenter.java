@@ -1,3 +1,7 @@
 public class AlignCenter implements AlignStrategy{
-    void render(Paragraph p );
+
+    public void render(Paragraph paragraph){
+        System.out.println("+++++"+paragraph.getPar()+"+++++");
+    }
+
 }
