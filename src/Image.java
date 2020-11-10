@@ -13,4 +13,8 @@ public class Image implements Element {
     {
         System.out.println("Image with name: "+imageName);
     }
+
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+    }
 }

@@ -27,4 +27,7 @@ public class Paragraph implements Element {
 
         this.alignStrategy=s;
     }
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+    }
 }

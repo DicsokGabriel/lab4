@@ -8,4 +8,8 @@ public class Table implements Element {
     {
         System.out.println(name);
     }
+
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+    }
 }

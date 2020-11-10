@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Section implements Element {
+public class Section implements Element{
     public String title;
     public ArrayList<Element> content=new ArrayList<>();
 
@@ -32,4 +32,11 @@ public class Section implements Element {
             e.print();
         }
     }
+    public void accept(Visitor visitor){
+        for (Element el:content) {
+
+            el.accept(visitor);
+        }
+    }
+
 }

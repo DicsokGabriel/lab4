@@ -23,4 +23,7 @@ public class ImageProxy implements Element{
         img.print();
         
     }
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+    }
 }
