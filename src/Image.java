@@ -9,6 +9,11 @@ public class Image implements Element {
             e.printStackTrace();
         }
     }
+
+    public String getImageName() {
+        return imageName;
+    }
+
     public void print()
     {
         System.out.println("Image with name: "+imageName);

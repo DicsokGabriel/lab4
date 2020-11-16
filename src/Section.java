@@ -33,10 +33,14 @@ public class Section implements Element{
         }
     }
     public void accept(Visitor visitor){
+        visitor.visit(this);
         for (Element el:content) {
 
             el.accept(visitor);
         }
     }
 
+    public String getTitle() {
+        return title;
+    }
 }

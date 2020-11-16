@@ -1,3 +1,4 @@
+
 public class Lab1 {
     public static void main(String[] args) throws Exception {
         Section cap1 = new Section("Capitolul 1");
@@ -16,5 +17,6 @@ public class Lab1 {
         BookStatistics stats = new BookStatistics();
         cap1.accept(stats);
         stats.printStatistics();
+        stats.CreateJSON();
     }
 }
