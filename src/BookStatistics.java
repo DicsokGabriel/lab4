@@ -14,6 +14,9 @@ public class BookStatistics implements Visitor {
     JSONArray ip=new JSONArray();
     JSONArray t=new JSONArray();
 
+    public void visit(Book book){
+        ;
+    }
     public void visit(Image image){imageCounter++;
     i.add(image.getImageName());}
 
